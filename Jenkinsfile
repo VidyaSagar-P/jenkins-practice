@@ -9,19 +9,19 @@ pipeline {
         stage ('Test') {
             steps {
                 echo "Testing..."
-                sh 'hello'
+                // sh 'hello'
             }
         }
-        stage (Deploy) {
+        stage (Deploy) //this will work without single quotes also
+         {
             steps {
                 echo "Deploying..."
             }
         }
     }
+
+    // Post build actions
     post {
-        always {
-            echo "this is always"
-        }
         success {
             echo "This is success status"
         }
