@@ -23,8 +23,6 @@ pipeline {
         }
     }
 
-
-
     // Post build actions
     post {
         always {
