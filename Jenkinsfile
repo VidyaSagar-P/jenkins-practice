@@ -23,10 +23,13 @@ pipeline {
         }
     }
 
-    
+
 
     // Post build actions
     post {
+        always {
+            echo "always"
+        }
         success {
             echo "This is success status"
         }
